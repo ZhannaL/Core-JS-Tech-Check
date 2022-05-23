@@ -1,0 +1,38 @@
+{
+  "include": [
+    "./src/**/*",
+    "./.eslintrc.js",
+    "./config/**/*",
+    "global.d.ts",
+    "common/UnreachableCase.ts"
+  ],
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": [
+      "dom",
+      "ESNext"
+    ],
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "allowJs": true
+  },
+  "paths": {
+    "src": [
+      "./src/**/*",
+      "./*.d.ts"
+    ],
+    "common": [
+      "./common/**/*",
+      "./*.d.ts"
+    ],
+    "*": [
+      "global.d.ts"
+    ]
+  }
+}
