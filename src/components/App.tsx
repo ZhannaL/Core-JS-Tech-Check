@@ -5,6 +5,7 @@ import { EventDelegation } from './EventDelegation/EventDelegation';
 import { EventLoop } from './EventLoop/EventLoop';
 import { Hoisting } from './Hoisting/Hoisting';
 import { This } from './This/This';
+import Timer from './Timer/Timer';
 
 type TabPanelProps = {
   children?: React.ReactNode;
@@ -54,7 +55,7 @@ export const App = () => {
         <Tab sx={tabStyle} label="EventDelegation" />
         <Tab sx={tabStyle} label="This" />
         <Tab sx={tabStyle} label="Hoisting" />
-        <Tab sx={tabStyle} label="Item Six" />
+        <Tab sx={tabStyle} label="Timer" />
         <Tab sx={tabStyle} label="Item Seven" />
       </Tabs>
       <TabPanel value={value} index={0}>
@@ -75,7 +76,7 @@ export const App = () => {
         <Hoisting></Hoisting>
       </TabPanel>
       <TabPanel value={value} index={5}>
-        Item Six
+        <Timer></Timer>
       </TabPanel>
       <TabPanel value={value} index={6}>
         Item Seven
