@@ -6,3 +6,13 @@ export const secondEx =
 
 export const thirdEx =
   'function makeCounter() {    \n \xa0let count = 0;    \n \xa0return function() {      \n \xa0\xa0 return count++;       \n\xa0};      \n}      \nlet counter = makeCounter();   \ncounter(); // 0 \ncounter(); // 1      \ncounter() ; // 2 \nlet counter1 = makeCounter(); \nlet counter2 = makeCounter();  \n counter1(); // 0  \n counter1(); // 1   \n counter2(); // 0 ';
+
+export const multiplyByGroupPeople = () => {
+  const groupPeople = 21;
+  const inner = (money: number) => {
+    return groupPeople * money;
+  };
+  return inner;
+};
+
+const examMath = multiplyByGroupPeople()(35);
